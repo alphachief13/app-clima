@@ -51,7 +51,7 @@ function estiloNoite(){
 
 async function getLatAndLon(city){
     try{
-        const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${key}`);
+        const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${key}`);
         
         if(!response.ok){
             throw new Error("Erro na req: ", response.status);
