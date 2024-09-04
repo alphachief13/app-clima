@@ -14,7 +14,6 @@
 }
 
 body{
-    height: 100vh;
     font-family: 'gothamLight', sans-serif;
     color: white;
     transition: all 1s ease;
@@ -91,12 +90,14 @@ body{
     #local{
         font-size: 52px;
         font-weight: 300;
-    
+        text-align: center;
     }
     
     #temp-atual{
         font-size: 100px;
         font-weight: 300;
+        text-align: center;
+    
     }
     
     .min-max{
@@ -330,12 +331,15 @@ body{
     #local{
         font-size: 42px;
         font-weight: 300;
+        text-align: center;
     
     }
     
     #temp-atual{
         font-size: 72px;
         font-weight: 300;
+        text-align: center;
+
     }
     
     .min-max{
@@ -378,7 +382,7 @@ body{
     }
     
     .info{
-        font-size: 18px;
+        font-size: 17px;
         letter-spacing: -1px;
     }
 
