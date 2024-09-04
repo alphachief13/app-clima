@@ -1,0 +1,385 @@
+@font-face {
+    font-family: 'gothamBlack';
+    src: url('fonts/gothamBlack.otf') format('opentype'); 
+}
+
+@font-face {
+    font-family: 'gothamLight';
+    src: url('fonts/gothanXlight.otf') format('opentype'); 
+}
+
+
+*{
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    font-family: 'gothamLight', sans-serif;
+    color: white;
+    transition: all 1s ease;
+}
+
+
+@media (min-width: 1025px) {
+
+    header{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .temp-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img-lupa{
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        padding: 10px;
+    }
+    
+    .barra-pesquisa{
+        width: 50%;
+        padding: 5px;
+        padding-left: 20px;
+        border-radius: 6px;
+        color: white;
+        font-family: 'gothamLight', sans-serif;
+        border: none;
+        outline: none;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #input-pesquisa{
+        width: 90%;
+        font-size: 18px;
+        color: white;
+        font-family: 'gothamLight', sans-serif;
+        border: none;
+        outline: none;
+    }
+    
+    #input-pesquisa::placeholder{
+        color: rgb(211, 211, 211);
+    
+    }
+    
+    .linha{
+        width: 30px;
+        border-radius: 1px;
+        height: 2px;
+        background-color: rgb(228, 228, 228);
+        margin-bottom: 6px;
+    }
+    
+    .top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    
+    #local{
+        font-size: 52px;
+        font-weight: 300;
+    
+    }
+    
+    #temp-atual{
+        font-size: 100px;
+        font-weight: 300;
+    }
+    
+    .min-max{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        font-size: 28px;
+        margin-top: 15px;
+        color: rgb(202, 202, 202);
+    }
+    
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    
+    .extra-infos{
+        width: 80%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        border-radius: 2px;
+    }
+    
+    .box-info{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: rgb(211, 211, 211);
+    }
+    
+    .info{
+        font-size: 22px;
+        margin: 0 10px 0 10px;
+        letter-spacing: -1px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    header{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .temp-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img-lupa{
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        padding: 10px;
+    }
+    
+    .barra-pesquisa{
+        width: 75%;
+        margin-top: 10px;
+        padding: 8px;
+        padding-left: 20px;
+        border-radius: 6px;
+        color: white;
+        font-family: 'gothamLight', sans-serif;
+        border: none;
+        outline: none;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #input-pesquisa{
+        width: 90%;
+        font-size: 18px;
+        color: white;
+        font-family: 'gothamLight', sans-serif;
+        border: none;
+        outline: none;
+    }
+    
+    #input-pesquisa::placeholder{
+        color: rgb(211, 211, 211);
+    
+    }
+    
+    .linha{
+        width: 30px;
+        border-radius: 1px;
+        height: 2px;
+        background-color: rgb(228, 228, 228);
+        margin-bottom: 6px;
+    }
+    
+    .top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 150px;
+    }
+    
+    #local{
+        font-size: 52px;
+        font-weight: 300;
+    
+    }
+    
+    #temp-atual{
+        font-size: 100px;
+        font-weight: 300;
+    }
+    
+    .min-max{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        font-size: 28px;
+        margin-top: 15px;
+        color: rgb(202, 202, 202);
+    }
+    
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    
+    .extra-infos{
+        width: 95%;
+        height: 150px;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        border-radius: 2px;
+        margin-top: 20px;
+    }
+    
+    .box-info{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: rgb(211, 211, 211);
+    }
+    
+    .info{
+        font-size: 18px;
+        margin: 0 10px 0 10px;
+        letter-spacing: -1px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    header{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .temp-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img-lupa{
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        padding: 10px;
+    }
+    
+    .barra-pesquisa{
+        width: 75%;
+        padding: 5px;
+        padding-left: 20px;
+        border-radius: 6px;
+        color: white;
+        font-family: 'gothamLight', sans-serif;
+        border: none;
+        outline: none;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #input-pesquisa{
+        width: 90%;
+        font-size: 15px;
+        color: white;
+        font-family: 'gothamLight', sans-serif;
+        border: none;
+        outline: none;
+    }
+    
+    #input-pesquisa::placeholder{
+        color: rgb(211, 211, 211);
+    
+    }
+    
+    .top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    
+    #local{
+        font-size: 42px;
+        font-weight: 300;
+    
+    }
+    
+    #temp-atual{
+        font-size: 72px;
+        font-weight: 300;
+    }
+    
+    .min-max{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        font-size: 20px;
+        margin-top: 15px;
+        color: rgb(202, 202, 202);
+    }
+    
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    
+    .extra-infos{
+        width: 90%;
+        height: 300px;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+        border-radius: 2px;
+    }
+    
+    .box-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: rgb(211, 211, 211);
+    }
+    
+    .info{
+        font-size: 18px;
+        letter-spacing: -1px;
+    }
+
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climapp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+
+        
+        <div class="barra-pesquisa">
+            <input id="input-pesquisa" placeholder="Busque por uma cidade..." type="text" autocomplete="off">
+            <img onclick="pesquisar()" class="img-lupa" src="media/lupa.png"/>
+
+        </div>
+        </input>
+    </header>
+    
+    <main>
+        
+        <div class="top">
+            <h2 id="local"></h2>
+            <div class="temp-icon">
+                <h2 id="temp-atual"></h2>
+                <img id="img-clima" src=""/>
+
+            </div>
+            <div class="min-max">
+                <p id="min-temp"></p>
+                <p id="max-temp"></p>
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="extra-infos">
+                <div class="box-info">
+                    <p class="info" id="cidade-pais"></p>
+                    <p class="info" id="sensacao"></p>
+                    <p class="info" id="descricao"></p>
+
+                </div>
+                <div class="box-info">
+                    <p class="info" id="umidade"></p>
+                    <p class="info" id="velo-vento"></p>
+                    <p class="info" id="nebulosidade"></p>
+
+                </div>
+                <div class="box-info">
+                    <p class="info" id="nascer-sol"></p>
+                    <p class="info" id="por-sol"></p>
+                    <p class="info" id="direcao-vento"></p>
+                </div>
+            </div>
+    
+        </div>
+        
+    </main>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
